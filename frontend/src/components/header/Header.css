@@ -1,0 +1,54 @@
+.header {
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/header_img.png') no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.header .header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: Fadein 3s;
+}
+
+.header-contents h2 {
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw, 22px);
+}
+
+.header-contents p {
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+}
+
+.header button {
+    border: none;
+    color: tomato;
+    background-color: white;
+    font-weight: 500;
+    padding: 1vh 2.5vh;
+    border-radius: 0.8vh;
+    cursor: pointer;
+    font-size: max(1vh, 13px);
+
+}
+
+@keyframes Fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(-5vh);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+}
